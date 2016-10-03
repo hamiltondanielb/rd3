@@ -1,4 +1,4 @@
-### Looking for maintaners !!! 
+### Looking for maintaners !!!
 Currently I don't have time to manage this library anymore so if someone is willing to maintain I would like to transfer this repository. Please open an issue if you do so =)
 
 ## [rd3](https://github.com/yang-wei/rd3) (forked from [react-d3](https://github.com/esbullington/react-d3))
@@ -59,6 +59,7 @@ const AreaChart = rd3.AreaChart;
 const Treemap = rd3.Treemap;
 const ScatterChart = rd3.ScatterChart;
 const CandleStickChart = rd3.CandleStickChart;
+const BarLineChart = rd3.BarLineChart;
 ```
 
 For usage, please see [here](https://yang-wei.github.io/rd3).
