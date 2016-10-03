@@ -12,6 +12,7 @@ var PieChart = rd3.PieChart;
 var AreaChart = rd3.AreaChart;
 var Treemap = rd3.Treemap;
 var ScatterChart= rd3.ScatterChart;
+var BarLineChart = rd3.BarLineChart;
 
 hljs.initHighlightingOnLoad();
 
@@ -50,7 +51,7 @@ var Demos = React.createClass({
   render: function() {
 
     var lineData = [
-      { 
+      {
         name: 'series1',
         values: [ { x: 0, y: 20 }, { x: 1, y: 30 }, { x: 2, y: 10 }, { x: 3, y: 5 }, { x: 4, y: 8 }, { x: 5, y: 15 }, { x: 6, y: 10 } ],
         strokeWidth: 3,
@@ -63,7 +64,7 @@ var Demos = React.createClass({
       {
         name: 'series3',
         values: [ { x: 0, y: 0 }, { x: 1, y: 5 }, { x: 2, y: 8 }, { x: 3, y: 2 }, { x: 4, y: 6 }, { x: 5, y: 4 }, { x: 6, y: 2 } ]
-      } 
+      }
     ];
 
     var barData = [
@@ -75,7 +76,7 @@ var Demos = React.createClass({
           { "x": 3, "y": -25},
         ]
       },
-      {  
+      {
         "name": "Series B",
         "values": [
           { "x": 1, "y":  9},
@@ -83,7 +84,7 @@ var Demos = React.createClass({
           { "x": 3, "y": -20},
         ]
       },
-      {  
+      {
         "name": "Series C",
         "values": [
           { "x": 1, "y":  14},
@@ -314,9 +315,9 @@ var Demos = React.createClass({
 `var ohlcData = [
   {
     name: "AAPL",
-    values: [ { x: [object Date], open: 451.69, high: 456.23, low: 435, close: 439.88 }, 
-              { x: [object Date], open: 437.82, high: 453.21, low: 435.86 , close: 449.83 }, 
-              ... 
+    values: [ { x: [object Date], open: 451.69, high: 456.23, low: 435, close: 439.88 },
+              { x: [object Date], open: 437.82, high: 453.21, low: 435.86 , close: 449.83 },
+              ...
             ]
   }
 ];`
@@ -340,7 +341,7 @@ var Demos = React.createClass({
             </pre>
           </div>
         </div>
-        
+
         <div className="row">
           <hr/>
         </div>
@@ -353,13 +354,13 @@ var Demos = React.createClass({
             <pre ref='block'>
               <code className='js'>
               {`var barData = [
-  { 
+  {
     "name": "Series A",
     "values": [
       { "x": 1, "y":  91},
       ...
   },
-  { 
+  {
     "name": "Series B",
      "values": [ ... ]
   }
@@ -385,7 +386,7 @@ var Demos = React.createClass({
         <div className="row">
           <h3 className="page-header">react-d3: Single series charts</h3>
         </div>
-       
+
         </div>
 
         <div className="row">
